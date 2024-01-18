@@ -1,7 +1,6 @@
 package java08_abstract.interfaceEx;
 
-
-	package java08_abstract.interfaceEx;
+ 
 
 	public class Test2 implements TestInterface {
 

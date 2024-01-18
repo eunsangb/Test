@@ -8,12 +8,14 @@ import java08_abstract.interfaceEx.multiple.Parent;
 
 public class InterfaceEx_02 {
 	
+	private static final int i = 0;
+
 	public static void main(String[] args) {
 		Parent p = new Parent();
 		p.out();
 		
 		
-		Parent pc = new Chile();
+		Parent pc = new Child();
 		pc.out(); //동적 바인딩 -> 자식 클래스의 메소드가 호출된다
 		
 		
@@ -34,10 +36,11 @@ public class InterfaceEx_02 {
 		int[] arr = {1,2,3,4,5};
 		
 		for(int i = 0; i<arr.length; i++);{
+			
 			System.out.println(arr[i]);
 		}
 		
-		system.out.println("-------");
+		System.out.println("-------");
 		
 		
 		// for each 구문
@@ -50,12 +53,12 @@ public class InterfaceEx_02 {
 		
 		Child[] childs = new Child[10];
 		
-		for(int i =0; i<child.length; i++)  childs[i] = new Child();
+		for(int i =0; i<childs.length; i++)  childs[i] = new Child();
 		
 		
 		
 		for( Child c : childs) {
-			ch = new Child();
+			c = new Child();
 		}
 		
 		for( Child ch : childs) {

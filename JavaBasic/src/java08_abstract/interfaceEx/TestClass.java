@@ -18,4 +18,4 @@ package java08_abstract.interfaceEx;
 	   public abstract void mehtod3();
 	   
 	}
-}
+
